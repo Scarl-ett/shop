@@ -42,7 +42,7 @@ const App = () => {
           </Container>
           </>
         } />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/:id" element={<Detail shoes={shoes}/>} />
         <Route path="/about" element={<About />}>
           <Route path="member" element={<div>회사멤버임</div>} />
           <Route path="location" element={<div>회사위치임</div>} />
