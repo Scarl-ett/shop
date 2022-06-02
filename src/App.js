@@ -30,17 +30,19 @@ const App = () => {
       </Navbar>
 
       <Routes>
-        <Route path="/" element={<>      
-        <div className='main-bg' style={{backgroundImage : 'url(' + bg + ')' }}></div>
+        <Route path="/" element={
+        <>      
+          <div className='main-bg' style={{backgroundImage : 'url(' + bg + ')' }}></div>
           <br/><br/><br/>
           <Container>
             <Row>
               {data.map((item, idx) => {
-                return <Item item={item} idx={idx} key={idx} />
+                return <Item item={item} idx={idx} key={idx}/>
               })}
             </Row>
           </Container>
-          </>
+          <button onClick={() => {}}></button>
+        </>
         } />
         <Route path="/detail/:id" element={<Detail shoes={shoes}/>} />
         <Route path="/about" element={<About />}>

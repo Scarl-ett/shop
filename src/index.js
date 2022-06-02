@@ -12,6 +12,7 @@ root.render(
       <App />
     </BrowserRouter>
   </React.StrictMode>
+  // strictMode를 삭제하면 useEffect 안에 코드 한번만 실행함
 );
 
 // If you want to start measuring performance in your app, pass a function
